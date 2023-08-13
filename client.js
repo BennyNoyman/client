@@ -26,3 +26,9 @@ button2.addEventListener('click', async () => {
     const fiveMales = await get5male();
     console.log(fiveMales);
 })
+//3
+async function fakeStore() {
+    const products = await fetch('https://fakestoreapi.com/products');
+    console.log(await products.json());
+}
+fakeStore();
